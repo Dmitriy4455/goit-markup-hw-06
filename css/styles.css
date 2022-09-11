@@ -317,7 +317,7 @@ img {
     text-align: center;
 }
 .our-team-names p {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     
 }
 .socials {
@@ -369,6 +369,8 @@ img {
     line-height: 1.8;
     text-align: center;
     font-family: inherit;
+    padding: 10px 20px;
+    border: none;
 
 }
 .button.secondary {
@@ -381,6 +383,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+    padding: 6px 26px;
     border: none;
     transition: color var(--hover-timing), background-color var(--hover-timing), box-shadow var(--hover-timing);
 }
@@ -509,7 +512,9 @@ img {
     
     transition-duration: 250ms; 
 }
-
+.card-set-item {
+    
+}
 .card-set-items .link {
     display: block;
     transition-property: border, box-shadow;
@@ -517,17 +522,20 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 
 }
-.card-set-items:hover .portfolio-actions,
-.card-set-items:focus .portfolio-actions {
+.link:hover .portfolio-actions,
+.link:focus .portfolio-actions {
     transform: translateY(0);
 }
 .card-set-items .link:hover,
 .card-set-items .link:focus {
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
-    transition: box-shadow var(--hover-timing);   
+    transition: box-shadow var(--hover-timing); 
 }
 
 .portfolio-overlay {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
     color: var(--accent-white-color);
 }
 
@@ -630,14 +638,13 @@ margin-bottom: 10px;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--hover-timing);
+    transition: opacity var(--hover-timing), visibility var(--hover-timing);
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transition: visibility var(--hover-timing), opacity var(--hover-timing);
 }
 
 .modal {

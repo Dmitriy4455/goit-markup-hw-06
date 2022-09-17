@@ -595,22 +595,24 @@
             </svg>
           </label>
           <label class="register-form-field">
+            <input class="register-form-label">Comments</label>
             <textarea class="register-form-message" name="" rows="5" placeholder="Enter the text
 "></textarea>
           </label>
           </div>
           <label class="register-form-agriment" for="">
-            <input class="register-form-checkbox" type="checkbox" name="" id="" />
+            <input class="register-form-checkbox visually-hidden"  type="checkbox" name="" id="" />
             <svg class="register-form-icon" width="18" height="15">
-              <use href="./images/icons.svg#icon-non-agree"></use>
-              <use></use>
+              <use class="icon-checked" href="./images/icons.svg#icon-agree"></use>
+              <use class="icon-unchecked" href="./images/icons.svg#icon-non-agree"></use>
             </svg>
-            <span class="registeer-form-desc">I agree with the newsletter and accept <a class="register-form-link" href="">the Terms and Conditions</a>
+            <span class="registeer-form-desc">I agree with the newsletter and accept <a class="register-form-link" target="_blank" href="">the Terms and Conditions</a>
 </span>
           </label>
           <button class="register-form-button button" type="submit">Send</button>
           </form>
         </div>
+
       </div>
     <script src="./js/modal.js"></script>
   </body>

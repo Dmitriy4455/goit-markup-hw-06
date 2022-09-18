@@ -723,7 +723,9 @@ margin-bottom: 10px;
     border: solid rgba(0, 0, 0, 0.1);
     background: var(--accent-white-color);
 }
-
+.modal-button:hover {
+    fill: var(--accent-color)
+}
 .register-form-title {
     display: block;
     text-align: center;
@@ -740,6 +742,7 @@ margin-bottom: 10px;
     position: relative;
     display: block;
     margin-bottom: 10px;
+    font-size: 12px;
 }
 .register-form-label {
     display: block;
@@ -766,8 +769,8 @@ margin-bottom: 10px;
     left: 12px; 
     transition: fill var(--hover-timing); 
 }
-.register-form-input:hover + .register-form-icon
-.register-form-input:focus + .register-form-icon {
+.register-form-input:hover + .register-form-icon > use,
+.register-form-input:focus + .register-form-icon > use {
     fill: var(--accent-color);
 }
 .register-form-message {
@@ -779,15 +782,17 @@ margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
+.register-form-message::placeholder {
+    color: rgba(117, 117, 117, 0.5);}
 .register-form-checkbox:checked + .register-form-icon .icon-checked {
     opacity: 1;
 }
 .icon-checked {
     opacity: 0;
-    fill: var(--accent-color);
+   
     transition: opacity var(--hover-timing);
 }
-.register-form-checkbox:checked+.register-form-icon .icon-unchecked {
+.register-form-checkbox:checked + .register-form-icon .icon-unchecked {
     opacity: 0;
 }
 .icon-unchecked {
@@ -795,10 +800,13 @@ margin-bottom: 10px;
     transition: opacity var(--hover-timing);
 }
 .register-form-agriment {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    top: 50%;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 .register-form-desc {
     user-select: none;

@@ -55,7 +55,7 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
-        <button href="" class="button primary" type="button" data-modal-open>
+        <button class="button primary" type="button" data-modal-open>
           Request our service
         </button>
       </section>
@@ -430,29 +430,29 @@
               </a>
             </li>
             <li>
-              <a class="button-customer" width="106" height="62">
-                <svg class="button-icon">
+              <a class="button-customer">
+                <svg class="button-icon" width="106" height="62">
                   <use href="./images/icons.svg#icon-client-3"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="button-customer" width="106" height="62">
-                <svg class="button-icon">
+              <a class="button-customer">
+                <svg class="button-icon" width="106" height="62">
                   <use href="./images/icons.svg#icon-client-4"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="button-customer" width="106" height="62">
-                <svg class="button-icon">
+              <a class="button-customer">
+                <svg class="button-icon" width="106" height="62">
                   <use href="./images/icons.svg#icon-client-5"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="button-customer" width="106" height="62">
-                <svg class="button-icon">
+              <a class="button-customer">
+                <svg class="button-icon" width="106" height="62">
                   <use href="./images/icons.svg#icon-client-6"></use>
                 </svg>
               </a>
@@ -485,7 +485,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="find-us-container">
           <p class="find-us">find us on</p>
           <ul class="socials list">
             <li class="socials-item">
@@ -535,7 +535,6 @@
                 rel="noopener noreferrer"
                 aria-label="linkedin"
               >
-            
                 <svg class="footer-socials-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -546,79 +545,125 @@
         <div class="subscription">
           <p>Subscribe to the newsletter</p>
           <form>
-            <div class="sub">
+            <span class="sub">
               <lable for="sub-box">
-                <input type="email" name="email" placeholder="E-mail" id="sub-box">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  id="sub-box"
+                />
               </lable>
-              <button class="sub-email" type="submit">Subscribe
+              <button class="sub-email" type="submit">
+                Subscribe
                 <svg class="icon-sub" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </span>
           </form>
-      
+        </div>
       </div>
     </footer>
 
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-          <button class="modal-button" type="button" data-modal-close>
-            <svg width="11" height="11">
-              <use href="./images/icons.svg#icon-Vector"></use>
-            </svg>
-          </button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
 
-          <form class="register-form" name="register-form">
-          <strong class="register-form-title">Leave your information and we'll call you back
+        <form class="register-form" name="register-form">
+          <strong class="register-form-title"
+            >Leave your information and we'll call you back
           </strong>
-        
+
           <div class="register-form-group" role="group">
-          <label class="register-form-field">
-            <span class="register-form-label">Name</span>
-            <input class="register-form-input" type="text" name="user-name" required />
-            <svg class="register-form-icon" width="12" height="12">
-              <use href="./images/icons.svg#icon-name"></use>
-            </svg>
-          </label>
-          <label class="register-form-field">
-            <span class="register-form-label">Telephone</span>
-            <input class="register-form-input" type="text" name="" required minlength="13" maxlength="13" />
-            <svg class="register-form-icon" width="13" height="13">
-              <use href="./images/icons.svg#icon-telephone"></use>
-            </svg>
-          </label>
-          <label class="register-form-field">
-            <span class="register-form-label">E-mail</span>
-            <input class="register-form-input" type="email" name="" required />
-            <svg class="register-form-icon" width="15" height="12">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </label>
-          <label class="register-form-field">
-            <span class="register-form-label">Comments</span>
-            <textarea class="register-form-message" name="" rows="5" placeholder="Enter the text
-"></textarea>
-          </label>
+            <label class="register-form-field">
+              <span class="register-form-label">Name</span>
+              <span class="register-form-span">
+                <input
+                  class="register-form-input"
+                  type="text"
+                  name="user-name"
+                  required
+                />
+                <svg class="register-form-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="register-form-field">
+              <span class="register-form-label">Telephone</span>
+              <span class="register-form-span">
+                <input
+                  class="register-form-input"
+                  type="text"
+                  name="user-phone"
+                  required
+                  minlength="13"
+                  maxlength="13"
+                />
+                <svg class="register-form-icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="register-form-field">
+              <span class="register-form-label">E-mail</span>
+              <span class="register-form-span">
+                <input
+                  class="register-form-input"
+                  type="email"
+                  name="user-email"
+                  required
+                />
+                <svg class="register-form-icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="register-form-field">
+              <span class="register-form-label">Comments</span>
+              <textarea
+                class="register-form-message"
+                name="user-message"
+                rows="5"
+                placeholder="Enter the text
+"
+              ></textarea>
+            </label>
           </div>
           <div>
             <div>
-          <label class="register-form-agriment" for="">
-            <input class="register-form-checkbox "  type="checkbox" name="" id="" />
-            <svg class="register-form-icon" width="18" height="15">
-              <use class="icon-checked" href="./images/icons.svg#icon-agree"></use>
-              <use class="icon-unchecked" href="./images/icons.svg#icon-non-agree"></use>
-            </svg>
-            <span class="registeer-form-desc">I agree with the newsletter and accept <a class="register-form-link" target="_blank" href="">the Terms and Conditions</a>
-</span>
-          </label>
+              <label class="register-form-agriment" for="">
+                <input class="register-form-checkbox" type="checkbox" />
+                <svg class="register-form-icon" width="18" height="15">
+                  <use
+                    class="icon-checked"
+                    href="./images/icons.svg#icon-agree"
+                  ></use>
+                  <use
+                    class="icon-unchecked"
+                    href="./images/icons.svg#icon-non-agree"
+                  ></use>
+                </svg>
+                <span class="registeer-form-desc"
+                  >I agree with the newsletter and accept
+                  <a class="register-form-link" target="_blank" href=""
+                    >the Terms and Conditions</a
+                  >
+                </span>
+              </label>
+            </div>
+            <button class="register-form-button button" type="submit">
+              Send
+            </button>
           </div>
-          <button class="register-form-button button" type="submit">Send</button>
-         </div> 
         </form>
-        </div>
-
       </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

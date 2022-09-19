@@ -564,7 +564,7 @@ img {
 .footer > .container {
     display: flex;
     align-items: baseline;
-    gap: 60px;
+  
 }
 .footer .link {
     color: rgba(255, 255, 255, 0.6);;
@@ -600,6 +600,9 @@ img {
 }
 .footer-link:not(:last-child) {
 margin-bottom: 10px;
+}
+.find-us-container {
+    margin-left: 70px;
 }
 .find-us {
     padding-bottom: 20px;
@@ -722,6 +725,7 @@ margin-bottom: 10px;
     padding: 0;
     border: solid rgba(0, 0, 0, 0.1);
     background: var(--accent-white-color);
+    cursor: pointer;
 }
 .modal-button:hover {
     fill: var(--accent-color)
@@ -744,6 +748,16 @@ margin-bottom: 10px;
     margin-bottom: 10px;
     font-size: 12px;
 }
+.register-form-field:last-child {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.register-form-span {
+    position: relative;
+
+}
 .register-form-label {
     display: block;
     font-size: 12px;
@@ -758,6 +772,7 @@ margin-bottom: 10px;
     border-radius: 4px;
     outline: transparent;
     transition: border-color var(--hover-timing);
+    cursor: pointer;
 }
 .register-form-input:hover,
 .register-form-input:focus {
@@ -765,8 +780,10 @@ margin-bottom: 10px;
 }
 .register-form-icon {
     position: absolute;
-    top: 50%;
+    top: 50%;;
     left: 12px; 
+    display: inline-block;
+    transform: translateY(-50%);
     transition: fill var(--hover-timing); 
 }
 .register-form-input:hover + .register-form-icon > use,
@@ -789,7 +806,6 @@ margin-bottom: 10px;
 }
 .icon-checked {
     opacity: 0;
-   
     transition: opacity var(--hover-timing);
 }
 .register-form-checkbox:checked + .register-form-icon .icon-unchecked {
@@ -809,7 +825,12 @@ margin-bottom: 10px;
     margin-bottom: 20px;
 }
 .register-form-desc {
-    user-select: none;
+    font-size: 13px;
+  
+}
+.register-form-link {
+    color: #757575;
+    text-decoration: none;
 }
 .register-form-button {
     display: block;
@@ -819,5 +840,5 @@ margin-bottom: 10px;
     border: none;
     color: var(--accent-white-color);
     background-color: var(--accent-color);
-    
+    cursor: pointer;
 }

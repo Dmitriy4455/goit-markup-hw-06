@@ -661,9 +661,9 @@ margin-bottom: 10px;
     display: flex;
     align-items: center;
     text-align: center;
-    width: 200px;
-    height: 50px;
-
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
     padding-top: 10px;
     padding-right: 28px;
     padding-bottom: 10px;
@@ -786,6 +786,9 @@ margin-bottom: 10px;
     transform: translateY(-50%);
     transition: fill var(--hover-timing); 
 }
+.agree {
+    left: -29px;
+}
 .register-form-input:hover + .register-form-icon > use,
 .register-form-input:focus + .register-form-icon > use {
     fill: var(--accent-color);
@@ -821,12 +824,13 @@ margin-bottom: 10px;
     align-items: center;
     justify-content: center;
     top: 50%;
-    gap: 10px;
+   margin-left: 30px;
     margin-bottom: 20px;
 }
 .register-form-desc {
+    margin-left: 10px;
     font-size: 13px;
-  
+    user-select: none;
 }
 .register-form-link {
     color: #757575;
